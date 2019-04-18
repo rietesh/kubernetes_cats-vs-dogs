@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: image_classifier
+spec:
+  ports:
+    - port: 80
+      targetPort: 5000
+      protocol: TCP
+  selector:
+    name: image_classifier
+  type: LoadBalancer      

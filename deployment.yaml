@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: image_classifier
+spec:
+  replicas: 5
+  template:
+    metadata:
+      labels:
+        name: image_classifier
+    spec:
+      containers:
+      - name: image_classifier
+        image:
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 5000
+          
