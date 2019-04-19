@@ -22,14 +22,8 @@ def overall(image):
     #print(img.shape)
     img = img.reshape(1, 50, 50, 3)
 
-#print(img.shape)
-#print(np.argmax(loaded_model.predict(img)))
     p = loaded_model.predict(img)
     answer = p[0][0]
-#print(answer)
-
-# answer == 0 means CATS
-# answer == 1 means DOGS
 
     if int(answer) == 0:
         return 'CAT'
