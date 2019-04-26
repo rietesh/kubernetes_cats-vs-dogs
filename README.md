@@ -1,2 +1,2 @@
 # image_classifier_in_kubernetes
-Image classifier in Kubernetes
+Read this blog: https://medium.com/@rietesh/4df439519675
