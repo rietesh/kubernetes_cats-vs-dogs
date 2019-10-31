@@ -5,6 +5,5 @@ RUN apt-get install -y python3-pip python3-dev build-essential libsm6 libxext6 l
 COPY . /image_classifier
 WORKDIR /image_classifier
 RUN pip3 install -r requirements.txt
-EXPOSE 3000
 ENTRYPOINT [ "python3" ]
 CMD [ "app.py" ]
